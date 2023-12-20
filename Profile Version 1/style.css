@@ -2,10 +2,43 @@
     box-sizing: border-box;
     margin: 0;
 }
+#Header{
+    position:fixed;
+    width: 100%;
+    height: auto;
+    background-color: #17c67c; 
+    text-align: center; 
+    padding: 5px;
+}
+body{
+    background-image: url(../Source/background_image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
 h1{
     text-align: center;
-}
+}   
 h2{
     text-align: center;
-    background-color: blueviolet;
+    background-color: #2be2b6;
+    padding: 10px;
+    overflow: hidden;
+}
+#socialtitle{
+    text-align: center;
+}
+.Index{
+    width: 19.5%;
+    padding: 3%;
+}
+#socialimage{
+    border-radius: 50%;
+    width: 60%;
+
+}
+#socialdiv{
+    width: 20%;
+    float: left;
+    height: auto;
+    text-align: center;
 }
