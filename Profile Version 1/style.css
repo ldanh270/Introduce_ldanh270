@@ -1,11 +1,29 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
-h1{
-    text-align: center;
+body{
+    height: 708px;
+    width: 1442.40px;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
 }
-h2{
-    text-align: center;
-    background-color: blueviolet;
+#header{
+    grid-area: header;
+    
+}
+#sidebar{
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+#content{
+    grid-area: content;
+    overflow: scroll;
 }
