@@ -4,39 +4,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
 a{
     text-decoration: none;
     color:black;
-}
-body{
-    width: 1441.61px;
-    background-image: url(../Source/background_full.jpg);
-    background-size: cover;
-    height: 708px;
-    display: grid;
-    grid-template-columns: 1.5fr 8fr;
-    grid-template-rows: 2fr 8fr;
-    grid-template-areas:
-    "header header"
-    "sidebar content"
-}
-#header{
-    grid-area: header;
-}
-#sidebar{
-    grid-area: sidebar;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr) 300px;
-    place-items: center;
-    position: sticky;
-    left:0px;
-    /* background-color: blanchedalmond; */
-}
-#content{
-    grid-area: content;
-    overflow: scroll;
-    display: grid;
 }
 .title1{
     display: block;
@@ -50,8 +21,33 @@ body{
     display: grid;
     place-items: center;
 }
-#socialnetwork a img{
-    width: 19.5%;
+
+body{
+    width: 1441.61px;
+    background-image: url(../Source/background_full.jpg);
+    background-size: cover;
+    height: 708px;
+    display: grid;
+    grid-template-columns: 1.5fr 8fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+}
+
+#header{
+    grid-area: header;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) 300px;
+    place-items: center;
+    position: sticky;
+    left:0px;
+    /* background-color: blanchedalmond; */
 }
 #sidebar a{
     background-color: #a6f4ba;
@@ -59,4 +55,13 @@ body{
     border-radius: 50px;
     width: 60%;
     text-align: center;
+}
+
+#content{
+    grid-area: content;
+    overflow: scroll;
+    display: grid;
+}
+#socialnetwork a img{
+    width: 19.5%;
 }
