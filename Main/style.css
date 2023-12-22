@@ -32,11 +32,24 @@ body{
     grid-template-rows: 2fr 8fr;
     grid-template-areas:
     "header header"
-    "sidebar content"
+    "sidebar content";
 }
 
 #header{
     grid-area: header;
+    display: grid;
+    grid-template-areas:
+    "Bigtitle"
+    "Name";
+    place-items: center;
+}
+#header img{
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    left: 65px;
+    width: 100px;
+    height: 100px;
 }
 
 #sidebar{
@@ -64,4 +77,5 @@ body{
 }
 #socialnetwork a img{
     width: 19.5%;
+    padding: 20px;
 }
