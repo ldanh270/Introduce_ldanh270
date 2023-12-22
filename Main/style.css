@@ -4,11 +4,17 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 body{
-    width: 1442.40px;
+    width: 1441.61px;
+    background-image: url(../Source/background_full.jpg);
+    background-size: cover;
     height: 708px;
     display: grid;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.5fr 8fr;
     grid-template-rows: 2fr 8fr;
     grid-template-areas:
     "header header"
@@ -25,11 +31,12 @@ body{
     place-items: center;
     position: sticky;
     left:0px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
 }
 #content{
     grid-area: content;
     overflow: scroll;
+    display: grid;
 }
 .title1{
     display: block;
@@ -38,9 +45,18 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     font-size:larger;
-    background-color: #17c67c;
-    margin: 30px 50px 30px 50px;
+    background-color: #91dbff;
     border-radius: 30px;
     display: grid;
     place-items: center;
+}
+#socialnetwork a img{
+    width: 19.5%;
+}
+#sidebar a{
+    background-color: #a6f4ba;
+    padding: 10px;
+    border-radius: 50px;
+    width: 60%;
+    text-align: center;
 }
