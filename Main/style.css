@@ -28,6 +28,10 @@ a {
     color: black;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #header {
     grid-area: header;
     display: grid;
@@ -151,16 +155,6 @@ a {
     border-radius: 50px;
 }
 
-#information {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#education {
-    grid-column: 2;
-    grid-row: 2;
-}
-
 .table_div {
     display: grid;
     grid-template-columns: 3fr 6fr auto;
@@ -171,6 +165,7 @@ a {
     padding: 10px;
     margin: 0 50px;
     background-color: aquamarine;
+    border-radius: 20px;
 }
 
 .fi {
