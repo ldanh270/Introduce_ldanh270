@@ -15,19 +15,24 @@ body{
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 1.5fr 8fr;
-    grid-template-rows: 3fr 7fr;
+    grid-template-rows: 2fr 8fr;
     grid-template-areas:
     "header header"
     "sidebar content";
+    grid-gap: 30px;
 }
 
 #header{
     grid-area: header;
     display: grid;
-    grid-template-columns: 495.6px auto 495.6px;    
+    grid-template-columns: auto auto auto;    
     grid-template-rows: 1fr;
     place-items: center;
     background-color: #00acff;
+}
+
+.avatar{
+    padding: 10px;
 }
 
 #avatar_1{
@@ -40,6 +45,12 @@ body{
     grid-column: 3;
 }
 
+#header img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
 #top_text{
     display: grid;
     grid-column: 2;
@@ -47,60 +58,53 @@ body{
     grid-template-areas: 
     "big_title"
     "name";
-    place-items: center center;
+    place-items: center;
 }
 
 #big_title{
     display: grid;
     place-items: center;
     grid-area: big_title;
-    width: 400px;
-    height: 80%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background-color: #a6f4ba;
+    font-family: Tahoma;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #f3ff23;
 }
 
 #name{
     display: grid;
     place-items: center;
     grid-area: name;
-    width: 400px;
-    height: 80%;
-    background-color: #a6f4ba;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-#header img{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    font-family: Tahoma;
+    font-size: 30px;
+    color: antiquewhite;
 }
 
 #sidebar{
     grid-area: sidebar;
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    position: sticky;
-    left:0px;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(5, 50px);
+    /* place-items: center; */
+    align-items: start;
+    justify-items:center;
+    position: fixed;
+    top: 160px;
+    background-color: #ffffff;
 }
 
 #sidebar a{
-    background-color: #a6f4ba;
+    background-color: #91dbff;
     padding: 10px;
     border-radius: 50px;
-    width: 60%;
+    width: 70%;
     text-align: center;
+    font-weight: bolder;
+    color: #241597;
 }
 
 #content{
     grid-area: content;
-    overflow: scroll;
-    display: grid;
-    padding-top: 30px;
-    overflow-x: hidden;
 }
 
 #socialnetwork a img{
@@ -124,4 +128,5 @@ a{
     border-radius: 30px;
     display: grid;
     place-items: center;
+    color: #241597;
 }
