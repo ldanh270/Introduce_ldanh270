@@ -88,8 +88,6 @@ body {
     align-items: start;
     justify-items: center;
     padding-top: 25px;
-    /* position: fixed;
-    top: 160px; */
 }
 
 #sidebar a {
@@ -102,15 +100,29 @@ body {
     color: #241597;
 }
 
+#sidebar a:hover {
+    background-color: #0056b3;
+}
+
 #content {
     grid-area: content;
     background-color: white;
     padding: 25px;
 }
+/* #socialnetwork a {
+    padding: 30px 30px 30px 30px;
+} */
 
 #socialnetwork a img {
     width: 19.5%;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    top: 2px;
+}
+
+#socialnetwork a img:hover {
+    background-color: #0056b3;
+    border-radius: 50px;
 }
 
 a {
@@ -149,8 +161,8 @@ a {
 
 #home {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 60px;
+    right: 30px;
     border-radius: 50%;
     align-items: center;
     justify-items: center;
