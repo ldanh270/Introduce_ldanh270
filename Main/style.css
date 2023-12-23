@@ -87,8 +87,9 @@ body{
     grid-template-rows: repeat(5, 50px) 1fr;
     align-items: start;
     justify-items:center;
-    position: fixed;
-    top: 160px;
+    padding-top:25px;
+    /* position: fixed;
+    top: 160px; */
 }
 
 #sidebar a{
@@ -134,4 +135,14 @@ a{
 #footer{
     grid-area: footer;
     background-color: #00acff;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 1fr;
+}
+
+#author{
+    grid-column: 2;
+    color: #ffffff;
 }
