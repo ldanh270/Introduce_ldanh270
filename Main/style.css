@@ -31,9 +31,9 @@ body{
     width: 1442.40px;
     height: 708px;
     background-image: url(../Source/background_full.jpg);
-    background-size: cover;
+    background-position: bottom right;
     display: grid;
-    position: fixed;
+    /* position: fixed; */
     grid-template-columns: 1.5fr 8fr;
     grid-template-rows: 3fr 7fr;
     grid-template-areas:
@@ -48,7 +48,8 @@ body{
     grid-template-rows: 2fr 1fr;
     place-items: center;
     background-image: url(../Source/background_header.jpg);
-    background-position: right bottom;
+    background-size: cover;
+    background-position: center;
 }
 
 #avatar_1{
