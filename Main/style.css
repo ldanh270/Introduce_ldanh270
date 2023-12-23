@@ -9,6 +9,7 @@ a{
     text-decoration: none;
     color:black;
 }
+
 .title1{
     display: block;
     height: 50px;
@@ -22,14 +23,19 @@ a{
     place-items: center;
 }
 
+html{
+    display: flex;
+    align-items: center;
+}
 body{
-    width: 1441.61px;
+    width: 1442.40px;
+    height: 708px;
     background-image: url(../Source/background_full.jpg);
     background-size: cover;
-    height: 708px;
     display: grid;
+    position: fixed;
     grid-template-columns: 1.5fr 8fr;
-    grid-template-rows: 2fr 8fr;
+    grid-template-rows: 3fr 7fr;
     grid-template-areas:
     "header header"
     "sidebar content";
@@ -38,30 +44,53 @@ body{
 #header{
     grid-area: header;
     display: grid;
-    grid-template-areas:
-    "Bigtitle"
-    "Name";
+    grid-template-columns: 141.6px auto 141.6px;
+    grid-template-rows: 2fr 1fr;
     place-items: center;
+    background-image: url(../Source/background_header.jpg);
+    background-position: right bottom;
 }
+
+#avatar_1{
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 1/3;
+    margin-left: 200px;
+}
+
+#avatar_2{
+    display: grid;
+    grid-column: 3/3;
+    grid-row: 1/3;
+    margin-right: 200px;
+}
+
+#big_title{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#name{
+    grid-column: 2;
+    grid-row: 2;
+}
+
 #header img{
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    position: fixed;
-    top: 25px;
-    left: 65px;
-    width: 100px;
-    height: 100px;
 }
 
 #sidebar{
     grid-area: sidebar;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr) 300px;
+    /* grid-template-rows: repeat(5, minmax(100px, 1fr)) 2fr; */
     place-items: center;
     position: sticky;
     left:0px;
-    /* background-color: blanchedalmond; */
 }
+
 #sidebar a{
     background-color: #a6f4ba;
     padding: 10px;
@@ -74,7 +103,10 @@ body{
     grid-area: content;
     overflow: scroll;
     display: grid;
+    padding-top: 30px;
+    overflow-x: hidden;
 }
+
 #socialnetwork a img{
     width: 19.5%;
     padding: 20px;
