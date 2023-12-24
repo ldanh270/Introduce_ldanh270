@@ -10,6 +10,11 @@ html {
     display: flex;
     align-items: center;
 }
+
+.rounded_icon img {
+    border-radius: 50%;
+}
+
 body {
     width: 1442.4px;
     height: 708px;
