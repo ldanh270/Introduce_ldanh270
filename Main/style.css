@@ -201,24 +201,6 @@ ul {
 #achievement {
     grid-column: 1/3;
     grid-row: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "title title"
-        "div1 div2";
-    grid-gap: 20px;
-}
-
-#title_achievement {
-    grid-area: title;
-}
-
-#secondary_school_div {
-    grid-area: div1;
-}
-
-#high_school_div {
-    grid-area: div2;
 }
 
 #footer {
